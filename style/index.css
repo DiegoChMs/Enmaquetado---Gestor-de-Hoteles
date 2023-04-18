@@ -1,0 +1,95 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+#navbar-logo{
+    width: 35px;
+    margin-right:15px ;
+}
+/* Edicin de Bootstrap */
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+    --bs-offcanvas-width: 250px;
+    display: flex;
+    text-align: center;
+}
+
+.btn{
+    width: 100%;
+}
+
+/* Imagen de fondo */
+.best-hotels{
+    background-image: url(https://images.pexels.com/photos/5378703/pexels-photo-5378703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+    height: 89vh;
+    width: 100vw;
+    margin-top: 10.5vh;
+    
+    /* Letra */
+    font-size: 4rem;
+    color: white;
+    display: grid;
+    text-align: center;
+    place-items: center;
+}
+
+.best-hotels:before{
+    content: '';
+    width: 100%;
+    min-height: 99.5vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(46, 46, 46) 100%);
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.best-hotels p{
+    z-index: 2;
+}
+
+/* Carousel */
+.choose-from-catalogue{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.choose-from-catalogue-phrase{
+    max-width: 30vw;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+}
+
+.choose-from-catalogue-phrase span{
+    font-weight: bold;
+}
+
+/* Imagenes del carrusel */
+.carousel-left{
+    max-width: 40vw;
+}
+.carousel-left img{
+    border-radius: 20px;
+}
+
+@media (max-width: 761px) {
+    .best-hotels{
+        font-size: 1.5rem;
+    }
+    .choose-from-catalogue{
+        flex-direction: column;
+        align-items: center;
+    }
+    .carousel-left{
+        max-width: 70%;
+    }
+    .choose-from-catalogue-phrase{
+        max-width: 70%;
+    }
+}
