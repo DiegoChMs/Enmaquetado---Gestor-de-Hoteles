@@ -18,12 +18,12 @@
 }
 
 /* Imagen de fondo */
-.best-hotels{
-    background-image: url(https://images.pexels.com/photos/5378703/pexels-photo-5378703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+.image-and-text{
+    position: relative;
     background-size: cover;
     background-position: center;
-    height: 89vh;
-    width: 100vw;
+    height: 89.4vh;
+    width: 100%;
     margin-top: 10.5vh;
     
     /* Letra */
@@ -34,10 +34,10 @@
     place-items: center;
 }
 
-.best-hotels:before{
+.image-and-text:before{
     content: '';
     width: 100%;
-    min-height: 99.5vh;
+    min-height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -46,14 +46,23 @@
     z-index: 1;
 }
 
-.best-hotels p{
+.image-and-text p{
     z-index: 2;
+}
+
+/* Primera imagen */
+#best-hotels{
+    background-image: url(https://images.pexels.com/photos/5378703/pexels-photo-5378703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+/* Segunda imagen */
+#events-hotel{
+    background-image: url(https://images.pexels.com/photos/50675/banquet-wedding-society-deco-50675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 
 /* Carousel */
 .choose-from-catalogue{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
 }
@@ -78,8 +87,16 @@
     border-radius: 20px;
 }
 
+footer{
+    display: grid;
+    place-items: center;
+    color: white;
+    background-color: #212529;
+    height: 60px;
+}
+
 @media (max-width: 761px) {
-    .best-hotels{
+    .image-and-text{
         font-size: 1.5rem;
     }
     .choose-from-catalogue{
