@@ -1,0 +1,42 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+body{
+    background-color: #212529;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/* Encabezado de card */
+.card-head{
+    display: grid;
+    place-items: center;
+}
+.card-head h1{
+    font-size: 20px;
+}
+.card-head img{
+    width: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Linea de separacion */
+.line{
+    background-color: white;
+}
+
+/* Boton del formulario */
+.button-submit{
+    margin-top: 32px;
+    width: 100%;
+}
+
+.button-submit a{
+    color: white;
+    text-decoration: none;
+}
