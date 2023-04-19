@@ -1,0 +1,87 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    background-color: #4b5258;
+    padding-top: 64px;
+}
+
+body{
+    background-image: url(https://images.pexels.com/photos/6331530/pexels-photo-6331530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    z-index: -2;
+}
+
+body:before{
+    content: '';
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(46, 46, 46) 100%);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* Contenedor Hoteles  */
+.container-hotels{
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: 32px;
+}
+.container-hotels > p{
+    color: white;
+    margin-left: 45px;
+}
+.container-hotels > hr{
+    margin: 0 45px 16px 45px;
+}
+
+/* Hoteles visitados */
+
+#first-container-hotels{
+    margin-top: 5vh;
+}
+
+.container-hotels-visited{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    place-content: center;
+    gap: 30px;
+    position: relative;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.container-hotels-visited img{
+    min-width: 100%;
+    border-radius: 20px;
+    transition: ease-in-out 0.5s;
+    position: relative;
+}
+
+.container-hotels-visited  img:hover{
+    opacity: 0.5;
+}
+.container-hotels-visited .image-hotels-visited p:hover{
+    z-index: 2;
+    opacity: 1;
+}
+
+.container-hotels-visited p{
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+@media (max-width: 313px) {
+    body{
+        padding-top: 101px;
+    }
+}
