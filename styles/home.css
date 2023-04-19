@@ -29,11 +29,12 @@ body:before{
     z-index: -1;
 }
 
+
 /* Contenedor Hoteles  */
 .container-hotels{
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
     border-radius: 20px;
-    margin: 32px;
+    margin: 32px 32px 6400px 32px;
 }
 .container-hotels > p{
     color: white;
@@ -45,10 +46,6 @@ body:before{
 
 /* Hoteles visitados */
 
-#first-container-hotels{
-    margin-top: 5vh;
-}
-
 .container-hotels-visited{
     display: grid;
     grid-template-columns: repeat(auto-fill, 230px);
@@ -57,6 +54,42 @@ body:before{
     position: relative;
     padding-left: 8px;
     padding-right: 8px;
+}
+
+/* Efectos de la imagen */
+.card-hotels-visited{
+    position: relative;
+}
+
+.image-hover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1.5s ease;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+  }
+
+.text-image-hover{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-hotels-visited:hover .image-hover{
+    opacity: 1;
+    cursor: pointer;
 }
 
 .container-hotels-visited img{
@@ -79,6 +112,7 @@ body:before{
     color: white;
     width: 100%;
 }
+
 
 @media (max-width: 313px) {
     body{
